@@ -25,7 +25,7 @@ transform = transforms.Compose([
     transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
 ])
 
-dataset = torchvision.datasets.ImageFolder(root="/Users/stellafazioli/Downloads/EarVN1dataset/Images", transform=transform)
+dataset = torchvision.datasets.ImageFolder(root="/EarVN1dataset/Images", transform=transform)
 
 indices = list(range(len(dataset)))
 np.random.shuffle(indices)
